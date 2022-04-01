@@ -1,7 +1,27 @@
 .footer {
     background-color: #FFF5F6;
+    @include tel {
+        padding-top: 48px;
+    }
+    @include tab {
+        padding-top: 40px;
+    }
+    @include desk {
+        padding-top: 120px;
+    }
+}
+.footer--container{
+    @include tab {
+        display: flex;
+        justify-content: space-between;
+        
+    }
 }
 .footer__logo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
     font-family: 'Titan One';
     font-style: normal;
     font-weight: 400;
@@ -10,11 +30,16 @@
     text-transform: uppercase;
     
     color: $second-color-text;
-    @media scren and (max-width:767px) {
+
+    @media screen and (max-width: 1274px) {
         width: 234px;
     }
 }
-.footer__logo-span{
+.footer__logo-top {
+
+}
+.footer__logo-bottom{
+    margin-top: 16px;
     font-weight: 400;
     font-size: 34px;
     line-height: 1.14;
@@ -22,4 +47,72 @@
     text-transform: uppercase;
     
     color: $primary-color-text;
+}
+
+.social__list {
+    @media screen and (max-width: 733px) {
+    margin-top: 40px;
+    }
+   
+    display: flex;
+    justify-content: flex-end;
+}
+.social__item:not(:last-child) {
+    margin-right: 28.24px;
+}
+.social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+.social__link--footer {
+    background: $second-color-text;
+    color: #ffffff;
+  }
+  
+  .social__icon {
+      fill: currentColor;
+  }
+.footer__text {
+    margin-top: 40px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 186%;
+    
+    
+    text-align: right;
+    
+    color: #000000;
+}
+.footer__tel {
+    color: $primary-color-text;
+}
+
+.licence{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 152%;
+        text-align: center;
+    
+    color: #907E82;
+    margin-top: 40px;
+    padding-top: 16px;
+    padding-bottom: 20px;
+
+    border-top: 1px solid #E1E1E1;
+    
+}
+.licence__text {
+    // @media screen and (max-width: 733px) {
+    //     width: 234px;
+    // }
 }
