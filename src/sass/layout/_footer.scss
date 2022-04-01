@@ -16,6 +16,9 @@
         justify-content: space-between;
         
     }
+    @include desk {
+        align-items: center;
+    }
 }
 .footer__logo{
     display: flex;
@@ -28,7 +31,15 @@
     font-size: 18px;
     line-height: 1.16;
     text-transform: uppercase;
-    
+    @include tab {
+        font-size: 26px;
+        line-height: 1.15;
+        letter-spacing: 0.04em;
+    }
+    @include desk {
+    font-size: 30px;
+    line-height: 1.13;
+    }
     color: $second-color-text;
 
     @media screen and (max-width: 1274px) {
@@ -45,7 +56,15 @@
     line-height: 1.14;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    
+    @include tab {
+        font-size: 48px;
+        line-height: 1.14;
+        letter-spacing: 0.06em;
+    }
+    @include desk {
+        font-size: 58px;
+        line-height: 1.13;
+    }
     color: $primary-color-text;
 }
 
@@ -80,11 +99,18 @@
   }
 .footer__text {
     margin-top: 40px;
-    font-family: 'DM Sans';
+    font-family: DM Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 186%;
+    @include tab {
+    font-size: 14px;
+    }
+    @include desk {
+font-size: 16px;
+letter-spacing: 0.02em;
+    }
     
     
     text-align: right;
@@ -98,12 +124,22 @@
 .licence{
     font-family: 'DM Sans';
     font-style: normal;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 14px;
     line-height: 152%;
         text-align: center;
     
     color: #907E82;
+       
+  @media screen and (max-width: 733px) {
+      text-align: -webkit-center;
+        }
+    @include tab {
+        line-height: 186%;
+       letter-spacing: 0.02em;
+        
+      
+    }
     margin-top: 40px;
     padding-top: 16px;
     padding-bottom: 20px;
@@ -112,7 +148,7 @@
     
 }
 .licence__text {
-    // @media screen and (max-width: 733px) {
-    //     width: 234px;
-    // }
+    @media screen and (max-width: 733px) {
+        width: 149px;
+    }
 }
