@@ -20,9 +20,12 @@
    &:last-child{
       margin-bottom: 80px;
    }
-   @media screen and (min-width: 734px) {
+   @media screen and (min-width: 734px) and (max-width: 1275px) {
       margin-bottom: 80px;
    }
+      @media screen and (min-width: 1275px) {
+         margin-bottom: 120px;
+      }
 }
 .icon__milk{
    margin-bottom: 16px;
