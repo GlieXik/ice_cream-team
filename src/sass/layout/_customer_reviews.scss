@@ -1,2 +1,45 @@
 .customer_reviews {
+    padding-top: 80px;
+    padding-bottom: 48px;
+    background-color:$white-color;
+    @media screen and (min-width: 734px) and (max-width: 1274px) {
+        padding-bottom: 80px;
+    }
+    @media screen and (min-width: 1275px) {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
+.reviews__description {
+    background-color:$grey-background-color;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 255%;
+    text-align: center;
+    color:$text-color;
+}
+.reviews__description::before {
+    position: absolute;
+    content: "";
+    background-image: url();
+    background-size: 54px 40px;
+    fill: #000;
+    height: 54px;
+    width: 60px;
+    display: block;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    top: 8px;
+    z-index: -1;
+}
+.reviews__who {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 186%;
+    text-align: center;
+    color:$text-color;
 }
