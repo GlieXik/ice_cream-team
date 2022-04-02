@@ -1,12 +1,17 @@
 .container {
-  width: 320px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
-  padding: 0 15px 0 15px;
 
-  @media (min-width: 768px) {
-    width: 768px;
+  @include tel {
+    width: 320px;
   }
-  @media (min-width: 1200px) {
-    width: 1200px;
+
+  @include tab {
+    width: 734px;
+  }
+
+  @include desk {
+    width: 1275px;
   }
 }
