@@ -47,7 +47,9 @@
     }
 }
 .footer__logo-top {
-
+@media screen and (min-width: 734px) and (max-width: 1274px) {
+    width: 375px;
+}
 }
 .footer__logo-bottom{
     margin-top: 16px;
