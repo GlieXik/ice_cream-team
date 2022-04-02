@@ -90,20 +90,23 @@
     border-radius: 50%;
 }
 .social__link--footer {
+    height: 32px;
+    width: 32px;
     background-color: $second-color-text;
     color: #ffffff;
     &:hover,
     &:focus {
-        color: $second-color-text;
-        background-color: $background-color-3;
+        background-color: $primary-color-text;
     }
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
-  .social__icon {
-      fill: currentColor;
-  }
+
+.social__icon {
+    fill: currentColor;
+    height: 20px;
+    width: 20px;
+}
 .footer__text {
     margin-top: 40px;
     font-family: DM Sans;
@@ -112,16 +115,13 @@
     font-size: 12px;
     line-height: 186%;
     @include tab {
-    font-size: 14px;
+        font-size: 14px;
     }
     @include desk {
-font-size: 16px;
-letter-spacing: 0.02em;
+        font-size: 16px;
+        letter-spacing: 0.02em;
     }
-    
-    
     text-align: right;
-    
     color: #000000;
 }
 .footer__tel {
@@ -134,16 +134,16 @@ letter-spacing: 0.02em;
     font-weight: bold;
     font-size: 14px;
     line-height: 152%;
-        text-align: center;
+    text-align: center;
     
     color: #907E82;
        
   @media screen and (max-width: 733px) {
-      text-align: -webkit-center;
+    text-align: -webkit-center;
         }
     @include tab {
         line-height: 186%;
-       letter-spacing: 0.02em;
+        letter-spacing: 0.02em;
         
       
     }
@@ -151,8 +151,8 @@ letter-spacing: 0.02em;
     padding-top: 16px;
     padding-bottom: 20px;
     @include tab {
-    padding-top: 8px;
-    padding-bottom: 8px;
+        padding-top: 8px;
+        padding-bottom: 8px;
     }
 
     border-top: 1px solid #E1E1E1;
