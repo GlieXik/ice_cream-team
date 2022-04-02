@@ -1,11 +1,10 @@
 .hero {
-  
-    width: 100%;
-    height: 444px;
+width: 100%;
+
 background-color: rgba(255, 184, 202, 1);
 }
 .hero-title {
-position: relative;
+    
 font-family: 'Titan One';
 font-style: normal;
 font-weight: 400;
@@ -15,7 +14,7 @@ letter-spacing: 0.04em;
 text-transform: uppercase;
 color: #ffffff;
 margin-bottom: 20px;
-padding-top: 136px;
+
 }
 .hero-title__word {
 color: rgba(212, 20, 67, 1);
@@ -24,6 +23,7 @@ line-height: 0.95;
 }
 
 .hero-btn {
+    
 font-family: 'DM Sans';
 font-style: normal;
 font-weight: 400;
@@ -37,19 +37,30 @@ background-color: rgba(212, 20, 67, 1);
 height: 24px;
 width: 62.4px;
 margin-right: 8px;
+
 }
 .hero-btn__white {
+  
 height: 24px;
 width: 82.8px;
 margin-right: 0;
 color: rgba(212, 20, 67, 1);
 background-color: #ffffff;
 }
-
-.circuls {
-    position: absolute;
+.hero-block {
+    position: relative;
+    overflow: hidden;
+  z-index: 9;
+  padding-top: 136px;
+  padding-bottom: 158px;
+}
+.hero-block > .circuls {
+position: absolute;
+left: 31px;
+top: 25px;
 border-radius: 50%;
 background-color: rgba(255, 165, 186, 1);
 width: 346px;
 height: 344px;
+z-index: -1;
 }
