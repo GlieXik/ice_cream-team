@@ -47,8 +47,25 @@
     }
 }
 .footer__logo-top {
+font-family: 'Titan One';
+font-size: 18px;
+line-height: 21px;
+text-transform: uppercase;
+color: #FFA5BA;
+width: 232px;
+@media screen and (min-width: 1275px) {
+    width: 472px;
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
 @media screen and (min-width: 734px) and (max-width: 1274px) {
-    width: 375px;
+    width: 340px;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
 }
 }
 .footer__logo-bottom{
