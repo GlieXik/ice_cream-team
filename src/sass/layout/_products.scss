@@ -1,2 +1,73 @@
 .products {
+    background-color: #FFFFFF;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.section-title {
+font-family: 'Titan One';
+font-weight: 400;
+font-size: 34px;
+line-height: 1.15;
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+// color: var($primary-color-text);
+color: #D41443;
+margin-bottom: 148px;
+}
+
+.section-title__label {
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.17;
+    text-align: center;
+    text-transform: uppercase;
+    // color: var($second-color-text);
+    color: #FFA5BA;
+    margin-bottom: 15px;
+}
+
+.title {
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 70px;
+}
+
+.section-text {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+
+.products-list__item {
+width: 290px;
+height: 489px;
+border-radius: 24px;
+padding: 40px;
+margin-bottom: 140px;
+}
+
+.first-product {
+background-color: #FFB8CA;
+}
+
+.second-product {
+    background-color: #F0D1A5;
+}
+
+.third-product {
+    background-color: #C2E297;
 }
