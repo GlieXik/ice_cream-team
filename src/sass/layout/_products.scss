@@ -1,8 +1,9 @@
 .products {
-    background-color: #FFFFFF;
+    background-color:#FFFFFF;
     text-align: center;
     padding-top: 80px;
     padding-bottom: 40px;
+
 }
 
 .section-title {
@@ -13,8 +14,7 @@ line-height: 1.15;
 text-align: center;
 letter-spacing: 0.04em;
 text-transform: uppercase;
-// color: var($primary-color-text);
-color: #D41443;
+color: $primary-color-text;
 margin-bottom: 148px;
 }
 
@@ -25,8 +25,7 @@ margin-bottom: 148px;
     line-height: 1.17;
     text-align: center;
     text-transform: uppercase;
-    // color: var($second-color-text);
-    color: #FFA5BA;
+    color: $second-color-text;
     margin-bottom: 15px;
 }
 
@@ -50,6 +49,20 @@ margin-bottom: 148px;
     text-align: center;
     letter-spacing: 0.04em;
     color: #FFFFFF;
+@media screen and (min-width: 734px) {
+    line-height: 1.76;
+}
+@media screen and (min-width: 1275px) {
+    font-size: 16px;
+    line-height: 1.76;
+}
+}
+
+.products-list {
+    @media screen and (min-width: 734px) {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .products-list__item {
@@ -58,16 +71,73 @@ height: 489px;
 border-radius: 24px;
 padding: 40px;
 margin-bottom: 140px;
+padding-top: 0;
+&:last-child {
+    margin-bottom: 0;
+}
+&::before {
+    content: '';
+    display: block;
+    height: 280px;
+    transform: translateY(-140px);
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+@media screen and (min-width: 734px) and (max-width: 1274px) {
+    width: 224px;
+    height: 473px;
+    flex-basis: calc(100% / 3 - 30px);
+    padding: 40px 32px;
+}
+@media screen and (min-width: 1275px) {
+    width: 394px;
+    height: 535px;
+    flex-basis: calc(100% / 3 - 30px);
+    padding: 60px;
+}
+}
+
+.products-list__item-box {
+    transform: translateY(-140px);
 }
 
 .first-product {
 background-color: #FFB8CA;
+&::before {
+    background-image: url(../images/img/products/icecream-mob.png);
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url(../images/img/products/icecream-mob-2x.png);
+    }
+}
 }
 
 .second-product {
     background-color: #F0D1A5;
+    &::before {
+        background-image: url(../images/img/products/icecoffee-mob.png);
+    }
 }
 
 .third-product {
     background-color: #C2E297;
+    &::before {
+        background-image: url(../images/img/products/milkshake-mob.png);
+    }
+}
+
+.products-btn {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+
+.products-btn__icon {
+    fill: $primary-color-text;
 }
