@@ -1,9 +1,11 @@
 .hero {
+  
     width: 100%;
     height: 444px;
 background-color: rgba(255, 184, 202, 1);
 }
 .hero-title {
+position: relative;
 font-family: 'Titan One';
 font-style: normal;
 font-weight: 400;
@@ -16,19 +18,38 @@ margin-bottom: 20px;
 padding-top: 136px;
 }
 .hero-title__word {
-    color: rgba(212, 20, 67, 1);
-    font-weight: 700;
+color: rgba(212, 20, 67, 1);
+font-size: 48px;
+line-height: 0.95;
 }
 
 .hero-btn {
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.28;
-    text-align: center;
-    padding: 10px 15px;
-    border-radius: 20px;
-    color: #FFFFFF;  
-    background-color: rgba(212, 20, 67, 1);
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 1.25;
+text-align: center;
+color: #FFFFFF;
+border-radius: 20px;
+color: #FFFFFF;  
+background-color: rgba(212, 20, 67, 1);
+height: 24px;
+width: 62.4px;
+margin-right: 8px;
+}
+.hero-btn__white {
+height: 24px;
+width: 82.8px;
+margin-right: 0;
+color: rgba(212, 20, 67, 1);
+background-color: #ffffff;
+}
+
+.circuls {
+    position: absolute;
+border-radius: 50%;
+background-color: rgba(255, 165, 186, 1);
+width: 346px;
+height: 344px;
 }
