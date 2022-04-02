@@ -1,10 +1,6 @@
 .gallery {
-  background-image: linear-gradient(
-    to bottom,
-    $background-color-1 40%,
-    $white-color 40%,
-    $white-color 60%
-  );
+  width: 100%;
+  background-image: linear-gradient(to bottom, $background-color-4 40%, $white-color 40%, $white-color 60%);
   &-img {
     width: 100%;
   }
