@@ -4,7 +4,11 @@
  * Все паршалы подключаются сюда.
  */
 body {
+<<<<<<< HEAD
   font-family: "DM Sans", sans-serif !important;
+=======
+  font-family: 'DM Sans', sans-serif !important;
+>>>>>>> 203dba282d72c36aea1e99c3e9e4c6ee1f7e60e7
 }
 
 img {
@@ -45,7 +49,12 @@ Use a better box model (opinionated).
 *,
 ::before,
 ::after {
+<<<<<<< HEAD
   box-sizing: border-box;
+=======
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+>>>>>>> 203dba282d72c36aea1e99c3e9e4c6ee1f7e60e7
 }
 
 /**
@@ -126,7 +135,11 @@ code,
 kbd,
 samp,
 pre {
+<<<<<<< HEAD
   font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+=======
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+>>>>>>> 203dba282d72c36aea1e99c3e9e4c6ee1f7e60e7
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -208,9 +221,15 @@ select {
 Correct the inability to style clickable types in iOS and Safari.
 */
 button,
+<<<<<<< HEAD
 [type=button],
 [type=reset],
 [type=submit] {
+=======
+[type='button'],
+[type='reset'],
+[type='submit'] {
+>>>>>>> 203dba282d72c36aea1e99c3e9e4c6ee1f7e60e7
   -webkit-appearance: button;
 }
 
@@ -263,7 +282,11 @@ Correct the cursor style of increment and decrement buttons in Safari.
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
+<<<<<<< HEAD
 [type=search] {
+=======
+[type='search'] {
+>>>>>>> 203dba282d72c36aea1e99c3e9e4c6ee1f7e60e7
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -304,13 +327,26 @@ summary {
   margin: 0 auto;
   padding: 0 15px 0 15px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 203dba282d72c36aea1e99c3e9e4c6ee1f7e60e7
 @media (min-width: 768px) {
   .container {
     width: 768px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 203dba282d72c36aea1e99c3e9e4c6ee1f7e60e7
 @media (min-width: 1200px) {
   .container {
     width: 1200px;
   }
+<<<<<<< HEAD
 }/*# sourceMappingURL=main.css.map */
+=======
+}
+/*# sourceMappingURL=main.css.map */
+>>>>>>> 203dba282d72c36aea1e99c3e9e4c6ee1f7e60e7

@@ -1,2 +1,25 @@
 .footer {
+    background-color: #FFF5F6;
+}
+.footer__logo{
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.16;
+    text-transform: uppercase;
+    
+    color: $second-color-text;
+    @media scren and (max-width:767px) {
+        width: 234px;
+    }
+}
+.footer__logo-span{
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    
+    color: $primary-color-text;
 }
