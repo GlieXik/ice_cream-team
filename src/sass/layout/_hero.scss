@@ -1,2 +1,34 @@
 .hero {
+    width: 100%;
+    height: 444px;
+background-color: rgba(255, 184, 202, 1);
+}
+.hero-title {
+font-family: 'Titan One';
+font-style: normal;
+font-weight: 400;
+font-size: 26px;
+line-height: 1.15;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #ffffff;
+margin-bottom: 20px;
+padding-top: 136px;
+}
+.hero-title__word {
+    color: rgba(212, 20, 67, 1);
+    font-weight: 700;
+}
+
+.hero-btn {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: #FFFFFF;  
+    background-color: rgba(212, 20, 67, 1);
 }
