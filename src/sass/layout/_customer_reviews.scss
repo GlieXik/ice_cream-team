@@ -1,2 +1,88 @@
 .customer_reviews {
+    padding-top: 80px;
+    padding-bottom: 48px;
+    background-color:$white-color;
+    @media screen and (min-width: 734px) and (max-width: 1274px) {
+        padding-bottom: 80px;
+    }
+    @media screen and (min-width: 1275px) {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
+.reviews__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    padding-bottom: 15px;
+}
+.reviews__description {
+    background-color:$grey-background-color;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 255%;
+    text-align: center;
+    color:$text-color;
+    padding-top: 43px;
+    padding-right: 60px;
+    padding-bottom: 25px;
+    padding-left: 60px;
+    margin-bottom: 15px;
+    @media screen and (min-width: 734px) and (max-width: 1274px) {
+        font-size: 14px;
+        line-height: 216%;
+        letter-spacing: 0.04em;
+        padding: 40px 50px;
+    }
+    @media screen and (min-width: 1275px) {
+        font-size: 16px;
+        line-height: 186%;
+        padding-top: 47px;
+        padding-right: 142px;
+        padding-bottom: 39px;
+        padding-left: 142px;
+    }
+}
+.reviews__description::before {
+    content: "";
+    background-image: url(../images/svg/quotes.svg);
+    background-size: 54px 40px;
+    fill: #E1E1E1;
+    height: 54px;
+    width: 60px;
+    display: block;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    top: 8px;
+    z-index: -1;
+}
+.reviews__who {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.85;
+    text-align: center;
+    color:$text-color;
+    @media screen and (min-width: 734px) and (max-width: 1274px) {
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.04em;
+    }
+    @media screen and (min-width: 1275px) {
+        font-size: 20px;
+        line-height: 1.85;
+    }
+}
+.reviews__who::before {
+    content: "";
+    display: block;
+    background-image: url(../images/svg/points.svg);
+    background-size: 32px 4px;
+    margin: 0 auto 15px;
+    width: 32px;
+    height: 4px;
 }
