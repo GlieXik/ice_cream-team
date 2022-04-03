@@ -1,5 +1,5 @@
 .products {
-    background-color:#FFFFFF;
+    background-color:$white-color;
     text-align: center;
     padding-top: 80px;
     padding-bottom: 40px;
@@ -7,22 +7,17 @@
 }
 
 .section-title {
+    @include font(34px, 400, 1.15, 0.04em);
 font-family: 'Titan One';
-font-weight: 400;
-font-size: 34px;
-line-height: 1.15;
 text-align: center;
-letter-spacing: 0.04em;
 text-transform: uppercase;
 color: $primary-color-text;
 margin-bottom: 148px;
 }
 
 .section-title__label {
+    @include font(18px, 400, 1.17, 0.04em);
     font-family: 'Titan One';
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.17;
     text-align: center;
     text-transform: uppercase;
     color: $second-color-text;
@@ -30,25 +25,19 @@ margin-bottom: 148px;
 }
 
 .title {
+    @include font(20px, 400, 1.15, 0.04em);
     font-family: 'Titan One';
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.15;
     text-align: center;
-    letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: $white-color;
     margin-bottom: 70px;
 }
 
 .section-text {
+    @include font(14px, 700, 1.52, 0.04em);
     font-family: 'DM Sans';
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.52;
     text-align: center;
-    letter-spacing: 0.04em;
-    color: #FFFFFF;
+    color: $white-color;
 @media screen and (min-width: 734px) {
     line-height: 1.76;
 }
@@ -135,7 +124,7 @@ background-color: #FFB8CA;
     height: 40px;
     text-align: center;
     justify-content: center;
-    background-color: #FFFFFF;
+    background-color: $white-color;
 }
 
 .products-btn__icon {
