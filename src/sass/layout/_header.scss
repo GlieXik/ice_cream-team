@@ -32,8 +32,12 @@
     }
     
 }
+.site-nav__items {
+    z-index: 10;
+}
 .site-nav__items:not(:last-child){
     margin-right: 35px;
+  
 }
 .site-nav__link{
     font-style: normal;

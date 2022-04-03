@@ -21,7 +21,10 @@
     @include tab{
     font-size: 22px;
     }
-    
+    @include desk {
+        font-size: 38px;
+        margin-bottom: 24px;
+    }
     }
     .hero-title__word {
     color: rgba(212, 20, 67, 1);
@@ -30,10 +33,12 @@
     @include tab {
     font-size: 34px;
     }
+    @include desk {
+        font-size: 58px;
+    }
     }
     
     .hero-btn {
-        
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
@@ -41,15 +46,17 @@
     line-height: 1.25;
     text-align: center;
     color: #FFFFFF;
-    border-radius: 20px;
-    color: #FFFFFF;  
+    border-radius: 20px; 
     background-color: rgba(212, 20, 67, 1);
     height: 24px;
     width: 62.4px;
     margin-right: 8px;
     &:hover, &:focus {
-        color: rgba(212, 20, 67, 1);
-        background-color: #ffffff;
+        background-color: rgba(199, 19, 62, 1);
+    }
+    @include desk {
+        height: 40px;
+        width: 107px; 
     }
     }
     .hero-btn__white {
@@ -59,10 +66,18 @@
     color: rgba(212, 20, 67, 1);
     background-color: #ffffff;
     &:hover, &:focus {
-        color: #ffffff;
-        background-color: rgba(212, 20, 67, 1);
+        color: rgba(212, 20, 67, 1);
+        background-color: rgba(236, 235, 235, 1);
+    }
+    @include desk {
+        height: 40px;
+        width: 138px; 
     }
     }
+    .hero-link_btn {
+       color: #ffffff;
+    }
+        
     .hero-block {
     position: relative;
        
@@ -73,7 +88,10 @@
     padding-top: 20px;
     padding-bottom: 51px;
     }
-
+@include desk {
+    padding-top: 20px;
+    padding-bottom: 73px;
+}
     }
     .hero-block > .circuls {
     position: absolute;
@@ -90,6 +108,12 @@
         width: 335px;
         height: 333px;
     }
+    @include desk {
+        width: 534px;
+        height: 534px;
+        left: 517px;
+        top: -33px;
+    }
     }
 
 
@@ -101,6 +125,10 @@
     @include tab{
     left: 292px;
     top: -2px;
+    @include desk {
+        left: 636px;
+    top: 21px;
+    }
     }
 }
 
@@ -117,6 +145,10 @@
     margin-top: 61px;
     padding-left: 152px;
   }
+  @include desk {
+    font-size: 14px;
+    margin-top: 108px;
+  }
 }
 
 .hero-img__milk {
@@ -132,8 +164,9 @@
     @include tab {
     display: block;
     position: absolute;
-    top: 184px;
-    left: 529px;
+    right: 15px;
+    bottom: 0;
+   
     }
 }
 .hero-img__arrow {
@@ -144,10 +177,7 @@
     padding-left: 152px;
     }
 }
-// .list-group {
-//     display: flex;
-//     flex-direction: row-reverse;
-// }
+
 
 .hero-title__number{
     display: none;
@@ -160,11 +190,11 @@
     line-height: 1.14;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    
     color: $primary-color-text;
-    
     }
-    
+    @include desk {
+        font-size: 46px;
+    }
 }
 .hero-title__cafes{
     display: none;
@@ -177,11 +207,17 @@
         line-height: 1.25;
         color: $white-color;
     }
+    @include desk {
+        font-size: 14px;
+    }
 }
 
 .hero-block__text{
     display: flex;
     justify-content: space-between;
+    @include desk {
+        padding-top: 60px;
+    }
 }
 
 .group:not(:last-child){
@@ -190,12 +226,16 @@ margin-bottom: 10px;
 
 .list-group {
     margin-right: 7px;
+    @include desk {
+        margin-right: 19px;
+    }
 }
 .selection {
     position: relative;
     text-align: right;
-    @include tab {
+    
 &::before {
+    @include tab {
     content: '';
     position: absolute; 
     display: block;
@@ -204,8 +244,15 @@ margin-bottom: 10px;
     background-color: #ffffff;
     border-radius: 50%;
     z-index: -1;
-    right: -7px;
+    right: -6px;
     top: -3px;
     }
+    @include desk {
+        width: 30px;
+        height: 30px; 
+        right: -19px; 
+    }
   }
+  
 }
+

@@ -7,7 +7,7 @@
           made with <br />
           <span class="hero-title__word">passion</span>
         </h1>
-        <button class="hero-btn">Products</button>
+        <button class="hero-btn"><a class="hero-link_btn" href="#products">Products</a></button>
         <button class="hero-btn hero-btn__white">How it’s made?</button>
       </div>
       <div>
@@ -29,16 +29,25 @@
       sed do eiusmod tempor <br />
       incididunt ut labore et
     </p>
-    <img
+    <picture>
+      <source srcset="./images/img/hero/heroarrow-tab.png" media="(min-width:734px)">
+      <source srcset="./images/img/hero/heroarrow-desk.png" media="(min-width:1275px)">
+      <img
       class="hero-img__arrow"
-      src="./images/img/hero/heroarrow-tab.png"
+      src="./images/img/hero/heroarrow-desk.png"
       alt="красная стрелочка в белом кругу"
     />
 
+    </picture>
+    
     <picture class="hero-img__milk">
       <source
         srcset="./images/img/hero/cupmilk-tab-1x.png 1x, ./images/img/hero/cupmilk-tab-2x.png 2x"
         media="(min-width:734px)"
+      />
+      <source
+        srcset="./images/img/hero/cupmilk-desk-1x.png 1x, ./images/img/hero/cupmilk-desk-2x.png 2x"
+        media="(min-width:734px) and (max-width:1275px)"
       />
       <img src="./images/img/hero/cupmilk-desk-1x.png" alt="графин с молоком" />
     </picture>
@@ -47,6 +56,10 @@
       <source
         srcset="./images/img/hero/herogirl-tab-1x.png 1x, ./images/img/hero/herogirl-tab-2x.png 2x"
         media="(min-width:734px)"
+      />
+      <source
+        srcset="./images/img/hero/herogirl-desk-1x.png 1x, ./images/img/hero/herogirl-desk-2x.png 2x"
+        media="(min-width:734px) and (max-width:1275px)"
       />
       <img src="./images/img/hero/herogirl-desk-1x.png" alt="девушка с мороженным" />
     </picture>
@@ -65,8 +78,15 @@
           ./images/img/hero/herocream-tab-1x.png 1x,
           ./images/img/hero/herocream-tab-2x.png 2x
         "
-        media="(min-width:734px)"
+        media="(min-width:734px) and (max-width:1275px)" 
       />
+      <source
+      srcset="
+        ./images/img/hero/herocream-desk-1x.png 1x,
+        ./images/img/hero/herocream-desk-2x.png 2x
+      "
+      media="(min-width:1275px)"
+    />
       <img src="./images/img/hero/herocream-desk-1x.png" alt="рожок мороженного" />
     </picture>
   </div>
