@@ -50,11 +50,16 @@ margin-bottom: 148px;
 }
 
 .title {
-    margin-bottom: 32px;
+    margin-bottom: 70px;
     &::after {
         content: '';
         display: block;
-        margin-bottom: 32px;
+        position: absolute;
+        width: 26px;
+        height: 6px;
+        fill: $white-color;
+        left: 130px;
+        top: 58px;
         background-image: url(../images/svg/dots.svg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -68,6 +73,20 @@ margin-bottom: 148px;
     @include desk {
         font-size: 30px;
         line-height: 1.13;
+    }
+}
+
+@include tab {
+    .title::after {
+    left: 98px;
+    top: 58px;
+    }
+}
+
+@include desk {
+    .title::after {
+        left: 180px;
+        top: 70px;
     }
 }
 
@@ -115,7 +134,7 @@ padding-top: 0;
 @media screen and (min-width: 734px) and (max-width: 1274px) {
     width: 224px;
     height: 473px;
-    flex-basis: calc(100% / 3 - 30px);
+    margin-bottom: 0;
     &::before {
         height: 224px;
         margin-bottom: 32px;
@@ -125,8 +144,8 @@ padding-top: 0;
 @media screen and (min-width: 1275px) {
     width: 394px;
     height: 535px;
-    flex-basis: calc(100% / 3 - 30px);
     padding-bottom: 60px;
+    margin-bottom: 0;
     &::before {
         height: 394px;
         margin-bottom: 32px;
@@ -149,7 +168,7 @@ padding-top: 0;
 }
 
 .first-product {
-background-color: #FFB8CA;
+background-color: $background-color-1;
 &::before {
     background-image: url(../images/img/products/icecream-mob.png);
     @media (min-device-pixel-ratio: 2),
@@ -183,7 +202,7 @@ background-color: #FFB8CA;
 }
 
 .second-product {
-    background-color: #F0D1A5;
+    background-color: $background-color-2;
     &::before {
         background-image: url(../images/img/products/icecoffee-mob.png);
         @media (min-device-pixel-ratio: 2),
@@ -218,7 +237,7 @@ background-color: #FFB8CA;
 }
 
 .third-product {
-    background-color: #C2E297;
+    background-color: $background-color-3;
     &::before {
         background-image: url(../images/img/products/milkshake-mob.png);
         @media (min-device-pixel-ratio: 2),
@@ -260,12 +279,19 @@ margin-bottom: 32px;
 }
 
 .products-btn {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    text-align: center;
-    justify-content: center;
     background-color: $white-color;
+    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: #ECEBEB;
+    }
 }
 
 .products-btn__icon {
