@@ -144,6 +144,10 @@
     padding-left: 152px;
     }
 }
+// .list-group {
+//     display: flex;
+//     flex-direction: row-reverse;
+// }
 
 .hero-title__number{
     display: none;
@@ -184,3 +188,24 @@
 margin-bottom: 10px;
 }
 
+.list-group {
+    margin-right: 7px;
+}
+.selection {
+    position: relative;
+    text-align: right;
+    @include tab {
+&::before {
+    content: '';
+    position: absolute; 
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    z-index: -1;
+    right: -7px;
+    top: -3px;
+    }
+  }
+}
