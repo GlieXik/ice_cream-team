@@ -10,6 +10,7 @@
         padding-bottom: 120px;
     }
 }
+
 .reviews__img {
     display: block;
     max-width: 100%;
@@ -17,7 +18,35 @@
     margin: auto;
     padding-bottom: 15px;
 }
+
+.reviews__description-wrapper {
+    padding-top: 43px;
+    padding-bottom: 17px;
+    padding-right: 65px;
+    padding-left: 65px;
+    margin-bottom: 16px;
+    background-color: $grey-background-color;
+
+    @include tab {
+        padding-top: 37px;
+        padding-bottom: 36px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    @include desk {
+        padding-top: 47px;
+        padding-bottom: 30px;
+        padding-left: 140px;
+        padding-right: 140px;
+    }
+}
+
 .reviews__description {
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+
     background-color:$grey-background-color;
     font-family: 'DM Sans';
     font-style: normal;
@@ -26,28 +55,38 @@
     line-height: 255%;
     text-align: center;
     color:$text-color;
-    padding-top: 43px;
-    padding-right: 60px;
-    padding-bottom: 25px;
-    padding-left: 60px;
-    margin-bottom: 15px;
-    @media screen and (min-width: 734px) and (max-width: 1274px) {
+    z-index: 1;
+
+    background-image: repeating-linear-gradient(
+        to bottom, 
+        $grey-background-color, 
+        $grey-background-color 28px, 
+        $dark-grey-color 28px,
+        $dark-grey-color 30px
+        );
+
+    @include tab {
+        padding-left: 50px;
+        padding-right: 50px;
         font-size: 14px;
         line-height: 216%;
         letter-spacing: 0.04em;
-        padding: 40px 50px;
     }
-    @media screen and (min-width: 1275px) {
+
+    @include desk {
+        padding-right: 105px;
+        padding-left: 105px;
         font-size: 16px;
         line-height: 186%;
-        padding-top: 47px;
-        padding-right: 142px;
-        padding-bottom: 39px;
-        padding-left: 142px;
     }
 }
+
 .reviews__description::before {
     content: "";
+    position: absolute;
+    top: -20px;
+    left: -12px;
+
     background-image: url(../images/svg/quotes.svg);
     background-size: 54px 40px;
     fill: #E1E1E1;
@@ -56,9 +95,18 @@
     display: block;
     background-position: 50%;
     background-repeat: no-repeat;
-    top: 8px;
     z-index: -1;
+
+    @include tab {
+        top: -22px;
+        left: 10px;
+    }
+
+    @include desk {
+        left: 68px;
+    }
 }
+
 .reviews__who {
     font-family: 'DM Sans';
     font-style: normal;
@@ -77,6 +125,7 @@
         line-height: 1.85;
     }
 }
+
 .reviews__who::before {
     content: "";
     display: block;
