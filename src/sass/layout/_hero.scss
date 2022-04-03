@@ -71,7 +71,7 @@
     padding-bottom: 158px;
     @include tab{
     padding-top: 20px;
-    padding-bottom: 185px;
+    padding-bottom: 51px;
     }
 
     }
@@ -101,3 +101,45 @@
     top: -2px;
     }
 }
+
+.hero-lorem {
+    display: none;
+@include tab {
+    display: block;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.5;
+    color: #FFFFFF;
+    margin-top: 61px;
+    padding-left: 152px;
+  }
+}
+
+.hero-img__milk {
+    display: none;
+    @include tab {
+    display: block;
+    position: absolute;
+    top: 164px;
+    }
+}
+.hero-img__girl {
+    display: none;
+    @include tab {
+    display: block;
+    position: absolute;
+    top: 184px;
+    left: 529px;
+    }
+}
+.hero-img__arrow {
+    display: none;
+    @include tab {
+    display: block;
+    margin-top: 7px;
+    padding-left: 152px;
+    }
+}
+
