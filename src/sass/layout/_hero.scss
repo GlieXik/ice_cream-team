@@ -71,12 +71,11 @@
     z-index: -2;
     }
 
-.container.hero-block {
-    min-width: 320px;
-}
+
 .hero-img__cream {
     position: absolute;
     left: 117px;
     top: 34px;
     z-index: -1;
+    min-width: 320px;
 }
