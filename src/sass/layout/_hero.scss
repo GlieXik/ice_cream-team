@@ -37,15 +37,21 @@
     height: 24px;
     width: 62.4px;
     margin-right: 8px;
-    
+    &:hover, &:focus {
+        color: rgba(212, 20, 67, 1);
+        background-color: #ffffff;
+    }
     }
     .hero-btn__white {
-      
     height: 24px;
     width: 82.8px;
     margin-right: 0;
     color: rgba(212, 20, 67, 1);
     background-color: #ffffff;
+    &:hover, &:focus {
+        color: #ffffff;
+        background-color: rgba(212, 20, 67, 1);
+    }
     }
     .hero-block {
         position: relative;
@@ -62,10 +68,15 @@
     background-color: rgba(255, 165, 186, 1);
     width: 346px;
     height: 344px;
-    z-index: -1;
+    z-index: -2;
     }
 
 .container.hero-block {
-    width: 100%;
     min-width: 320px;
+}
+.hero-img__cream {
+    position: absolute;
+    left: 117px;
+    top: 34px;
+    z-index: -1;
 }
