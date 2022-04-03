@@ -85,8 +85,10 @@
     height: 344px;
     z-index: -2;
     @include tab{
-        left: 218px;
+        left: 233px;
         top: -36px;
+        width: 335px;
+        height: 333px;
     }
     }
 
@@ -141,5 +143,44 @@
     margin-top: 7px;
     padding-left: 152px;
     }
+}
+
+.hero-title__number{
+    display: none;
+    @include tab{
+        font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+    display: block;
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    
+    color: $primary-color-text;
+    
+    }
+    
+}
+.hero-title__cafes{
+    display: none;
+    @include tab{
+        display: block;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 1.25;
+        color: $white-color;
+    }
+}
+
+.hero-block__text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.group:not(:last-child){
+margin-bottom: 10px;
 }
 
