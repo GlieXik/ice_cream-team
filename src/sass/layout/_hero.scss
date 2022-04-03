@@ -1,7 +1,11 @@
 .hero {
     width: 100%;
     overflow: hidden;
+    margin-top: -1px;
     background-color: rgba(255, 184, 202, 1);
+    @include tab{
+    overflow: visible;
+    }
     }
     .hero-title {
         
@@ -14,12 +18,18 @@
     text-transform: uppercase;
     color: #ffffff;
     margin-bottom: 20px;
+    @include tab{
+    font-size: 22px;
+    }
     
     }
     .hero-title__word {
     color: rgba(212, 20, 67, 1);
     font-size: 48px;
     line-height: 0.95;
+    @include tab {
+    font-size: 34px;
+    }
     }
     
     .hero-btn {
@@ -54,10 +64,16 @@
     }
     }
     .hero-block {
-        position: relative;
-      z-index: 9;
-      padding-top: 136px;
-      padding-bottom: 158px;
+    position: relative;
+       
+    z-index: 9;
+    padding-top: 136px;
+    padding-bottom: 158px;
+    @include tab{
+    padding-top: 20px;
+    padding-bottom: 185px;
+    }
+
     }
     .hero-block > .circuls {
     position: absolute;
@@ -68,6 +84,10 @@
     width: 346px;
     height: 344px;
     z-index: -2;
+    @include tab{
+        left: 218px;
+        top: -36px;
+    }
     }
 
 
@@ -76,5 +96,8 @@
     left: 117px;
     top: 34px;
     z-index: -1;
-    min-width: 320px;
+    @include tab{
+    left: 292px;
+    top: -2px;
+    }
 }

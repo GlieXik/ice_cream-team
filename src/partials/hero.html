@@ -1,17 +1,29 @@
 <section class="hero">
   <div class="container hero-block">
-    <h1 class="hero-title">ice cream <br>
-      made with <br>
-      <span class="hero-title__word">passion</span></h1>
-      <button class="hero-btn">Products</button>
-      <button class="hero-btn hero-btn__white">How it’s made?</button>
-      <div class="circuls"></div>
-      <picture class="hero-img__cream">
-        <source srcset="/images/img/hero/herocream-mob-1x.png 1x, /images/img/hero/herocream-mob-2x.png 2x">
-        <img src="/images/img/hero/herocream-desk-1x.png" alt="рожок мороженного">
-      </picture>
-        
-      
+    <h1 class="hero-title">
+      ice cream <br />
+      made with <br />
+      <span class="hero-title__word">passion</span>
+    </h1>
+    <button class="hero-btn">Products</button>
+    <button class="hero-btn hero-btn__white">How it’s made?</button>
+    <div class="circuls"></div>
+    <picture class="hero-img__cream">
+      <source
+        srcset="
+          ./images/img/hero/herocream-mob-1x.png 1x,
+          ./images/img/hero/herocream-mob-2x.png 2x
+        "
+        media="(min-width:320px) and (max-width:733px)"
+      />
+      <source
+        srcset="
+          ./images/img/hero/herocream-tab-1x.png 1x,
+          ./images/img/hero/herocream-tab-2x.png 2x
+        "
+        media="(min-width:734px)"
+      />
+      <img src="./images/img/hero/herocream-desk-1x.jpg" alt="рожок мороженного" />
+    </picture>
   </div>
-  
 </section>
