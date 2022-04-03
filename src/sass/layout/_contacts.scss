@@ -289,31 +289,46 @@ color: #907E82;
 
 }
 
-.contacts-btn {
+// .contacts-btn {
+//     width: 161px;
+//     height: 44px;
+//     border-radius: 22px;
+//     background-color: $primary-color-text;
+//     color: $white-color;
+//     transition: background-color 250ms cubic-bezier(.4, 0, .2, 1),
+//     color 250ms cubic-bezier(.4, 0, .2, 1);
+
+//     &:hover, &:focus {
+//         background-color: $white-color;
+//         color: $primary-color-text;
+//         fill: $primary-color-text;
+//         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+//         outline: none;
+//     }
+
+// }
+
+// .contacts-btn-svg {
+//     .contacts-btn:hover &,
+//     .contacts-btn:focus & {
+//         fill: $primary-color-text;
+//     }
+// }
+
+.contacts-btn-location {
     width: 161px;
     height: 44px;
     border-radius: 22px;
     background-color: $primary-color-text;
     color: $white-color;
-
-    &:hover, &:focus {
-        background-color: $white-color;
-        color: $primary-color-text;
-        fill: $primary-color-text;
+    transition: background-color 250ms cubic-bezier(.4, 0, .2, 1);
+    
+    &:hover,
+    &:focus {
+        background-color: #EE0840;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         outline: none;
     }
-
-}
-
-.contacts-btn-svg {
-    .contacts-btn:hover &,
-    .contacts-btn:focus & {
-        fill: $primary-color-text;
-    }
-}
-
-.contacts-btn-location {
     @include tab{
         width: 192px;
     }
@@ -324,6 +339,19 @@ color: #907E82;
 }
 
 .contacts-btn-franchise {
+    width: 161px;
+    height: 44px;
+    border-radius: 22px;
+    background-color: $white-color;
+    color: $primary-color-text;
+    transition: background-color 250ms cubic-bezier(.4, 0, .2, 1);
+    
+    &:hover,
+    &:focus {
+        background-color: #ECEBEB;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        outline: none;
+    }
     @include tab {
         width: 174px;
     }
