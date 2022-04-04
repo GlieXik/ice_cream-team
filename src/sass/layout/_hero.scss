@@ -82,9 +82,9 @@
 .hero-block {
   
     position: relative;
-    z-index: 9;
+    z-index: 5;
     padding-top: 136px;
-    padding-bottom: 158px;
+    padding-bottom: 148px;
     @include tab{
         padding-top: 20px;
         padding-bottom: 51px;
@@ -122,15 +122,29 @@
     left: 117px;
     top: 34px;
     z-index: -1;
+    
+    animation: animate-cream 3000ms 1 cubic-bezier(0.4, 0, 0.2, 1);
+    @keyframes animate-cream {
+        0% {
+        transform: scale(0.5);
+        }
+        100% {
+        transform: scale(1);
+        }
+      }
     @include tab{
         left: 292px;
         top: -2px;
+    }
     @include desk {
         left: 636px;
         top: 21px;
         }
     }
-}
+
+
+
+  
 
 .hero-lorem {
     display: none;
@@ -155,6 +169,19 @@
 .hero-img__milk {
     display: none;
         @include tab {
+       animation: animate-milk 3000ms 2 cubic-bezier(0.4, 0, 0.2, 1);
+        @keyframes animate-milk {
+            0% {
+                transform: perspective(400px) rotateY(30deg);
+            }
+            
+            50% {
+                transform: perspective(400px) rotateY(-30deg);
+            }
+            100% {
+                transform: perspective(400px) rotateY(30deg);
+            }
+            }
         display: block;
         position: absolute;
         top: 164px;
@@ -166,6 +193,16 @@
 .hero-img__girl {
     display: none;
     @include tab {
+        animation: animateY110 2500ms 1 100ms;
+        
+        @keyframes animateY110 {
+            0% {
+              transform: translateX(450px);
+            }
+            100% {
+              transform: translateX(0);
+            }
+          }
         display: block;
         position: absolute;
         right: 15px;
@@ -267,7 +304,7 @@
 }
 
 .sleder-btn {
-    color: #ffffff;
+    background-color: #ffffff;
     margin-top: 7px;
     width: 18px;
     height: 18px;
