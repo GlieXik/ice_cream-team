@@ -16,6 +16,7 @@
     
 }
 .menu-open-btn{
+    position: relative;
     margin-left: auto;
     background-color: inherit;
     & .menu-icon__close {
@@ -23,7 +24,12 @@
         position: absolute;
         z-index: 11;
         fill: $white-color;
-        top: 20px;
+        top: -20px;
+        right: 20px;
+        @include tab {
+        right: 30px;
+        top: -30px;
+        }
     }
     
     & .menu-icon__open {
@@ -68,14 +74,6 @@
     }
 
 }
-.backdrop{
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-z-index: 2;
-background-color: rgba(0, 0, 0, .2);}
 
 .site-nav__mobile-list{
     height: 42px;
