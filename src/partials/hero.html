@@ -23,31 +23,27 @@
         </ul>
       </div>
     </div>
-    <p class="hero-lorem">
+    <div class="hero-lorem">
+    <p>
       Lorem ipsum dolor sit amet, <br />
       consectetur adipiscing elit, <br />
       sed do eiusmod tempor <br />
       incididunt ut labore et
     </p>
-    <picture>
-      <source srcset="./images/img/hero/heroarrow-tab.png" media="(min-width:734px)">
-      <source srcset="./images/img/hero/heroarrow-desk.png" media="(min-width:1275px)">
-      <img
-      class="hero-img__arrow"
-      src="./images/img/hero/heroarrow-desk.png"
-      alt="красная стрелочка в белом кругу"
-    />
-
-    </picture>
-    
+    <button class="sleder-btn">
+        <svg width="26px" height="26px" class="icon-sleder">
+          <use  href="./images/svg/icons.svg#icon-arrow-right2"></use>
+        </svg>
+    </button>
+  </div>
     <picture class="hero-img__milk">
       <source
         srcset="./images/img/hero/cupmilk-tab-1x.png 1x, ./images/img/hero/cupmilk-tab-2x.png 2x"
-        media="(min-width:734px)"
+        media="(min-width:734px) and (max-width:1275px)" 
       />
       <source
         srcset="./images/img/hero/cupmilk-desk-1x.png 1x, ./images/img/hero/cupmilk-desk-2x.png 2x"
-        media="(min-width:734px) and (max-width:1275px)"
+        media="(min-width:1275)"
       />
       <img src="./images/img/hero/cupmilk-desk-1x.png" alt="графин с молоком" />
     </picture>
@@ -55,11 +51,13 @@
     <picture class="hero-img__girl">
       <source
         srcset="./images/img/hero/herogirl-tab-1x.png 1x, ./images/img/hero/herogirl-tab-2x.png 2x"
-        media="(min-width:734px)"
+        media="(min-width:734px)and (max-width:1275px)"
       />
       <source
-        srcset="./images/img/hero/herogirl-desk-1x.png 1x, ./images/img/hero/herogirl-desk-2x.png 2x"
-        media="(min-width:734px) and (max-width:1275px)"
+        srcset="
+        ./images/img/hero/herogirl-desk-1x.png 1x,
+        ./images/img/hero/herogirl-desk-2x.png 2x"
+        media="(min-width:1275px)"
       />
       <img src="./images/img/hero/herogirl-desk-1x.png" alt="девушка с мороженным" />
     </picture>
