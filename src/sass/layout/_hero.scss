@@ -1,5 +1,4 @@
 .hero {
-    width: 100%;
     overflow: hidden;
     margin-top: -1px;
     background-color: rgba(255, 184, 202, 1);
@@ -79,12 +78,9 @@
         width: 138px; 
         }
     }
-
-.hero-link_btn {
-       color: #ffffff;
-    }
         
 .hero-block {
+  
     position: relative;
     z-index: 9;
     padding-top: 136px;
@@ -224,8 +220,10 @@
 }
 
 .hero-block__text{
-    display: flex;
-    justify-content: space-between;
+    @include tab {
+        display: flex;
+        justify-content: space-between;
+    }
     @include desk {
         padding-top: 60px;
     }
@@ -236,7 +234,9 @@
     }
 
 .list-group {
+    @include tab {
     margin-right: 7px;
+    }
     @include desk {
         margin-right: 19px;
     }
