@@ -1,0 +1,24 @@
+.back-to-top {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: $second-color-text;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 9999;
+  opacity: 0.4;
+}
+.back-to-top__arrow {
+  width: 30px;
+  height: 30px;
+
+  fill: $primary-color-text;
+}
+.show {
+  display: flex;
+}
