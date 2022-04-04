@@ -57,6 +57,7 @@
     @include desk {
         height: 40px;
         width: 107px; 
+        font-size: 14px;
     }
     }
     .hero-btn__white {
@@ -90,7 +91,7 @@
     }
 @include desk {
     padding-top: 20px;
-    padding-bottom: 73px;
+    padding-bottom: 60px;
 }
     }
     .hero-block > .circuls {
@@ -148,6 +149,7 @@
   @include desk {
     font-size: 14px;
     margin-top: 108px;
+    padding-left: 213px;
   }
 }
 
@@ -157,6 +159,9 @@
     display: block;
     position: absolute;
     top: 164px;
+    }
+    @include desk {
+        top: 301px;
     }
 }
 .hero-img__girl {
@@ -175,6 +180,10 @@
     display: block;
     margin-top: 7px;
     padding-left: 152px;
+    }
+    @include desk {
+        margin-top: 20px;
+        padding-left: 213px;
     }
 }
 
