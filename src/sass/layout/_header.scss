@@ -25,7 +25,7 @@
     fill: $white-color;
     top: 20px;
     right: 20px;
-    animation: animateY110 1500ms 1 0ms;
+    animation: animate-menu 1500ms 1 0ms;
     @include tab {
       right: 30px;
       top: 30px;
