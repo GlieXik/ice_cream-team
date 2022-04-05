@@ -1,7 +1,37 @@
 .gallery {
   width: 100%;
-  background-image: linear-gradient(to bottom, $background-color-4 40%, $white-color 40%, $white-color 60%);
+  background-image: linear-gradient(
+    to bottom,
+    $background-color-4 40%,
+    $white-color 40%,
+    $white-color 60%
+  );
   &-img {
     width: 100%;
   }
+}
+.gallary__grid {
+  display: grid;
+  justify-content: center;
+  padding: 0 16px;
+
+  @include tab {
+    padding: 0 73px;
+  }
+  @include desk {
+    padding: 0 135px;
+  }
+
+  grid-template-columns: 1fr 1fr minmax(80px, 2fr) 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.gallary__grid-item {
+  text-align: center;
+  border: 2px dashed aqua;
+  justify-self: center;
+}
+
+.gallary_grid-item:nth-child(8) {
+  display: none;
 }
