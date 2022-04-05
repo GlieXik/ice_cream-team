@@ -23,6 +23,9 @@
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M30.571 16c0 8.837-6.843 16-15.285 16s-15.285-7.163-15.285-16c0-8.837 6.843-16 15.285-16s15.285 7.163 15.285 16z"></path>
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M132.459 16c0 8.837-6.843 16-15.285 16s-15.285-7.163-15.285-16c0-8.837 6.843-16 15.285-16s15.285 7.163 15.285 16z"></path>
 </symbol>
+<symbol id="icon-close_40px" viewBox="0 0 32 32">
+<path d="M23.733 10.304l-1.504-1.504-5.963 5.963-5.963-5.963-1.504 1.504 5.963 5.963-5.963 5.963 1.504 1.504 5.963-5.963 5.963 5.963 1.504-1.504-5.963-5.963 5.963-5.963z"></path>
+</symbol>
 <symbol id="icon-cont-btn-r" viewBox="0 0 19 32">
 <path  fill="none" style="stroke: var(--color1, #D41342)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.2 3.2l11.553 12.8-11.553 12.8"></path>
 </symbol>
