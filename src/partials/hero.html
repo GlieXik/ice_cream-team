@@ -7,38 +7,43 @@
           made with <br />
           <span class="hero-title__word">passion</span>
         </h1>
-        <button class="hero-btn">Products</button>
-        <button class="hero-btn hero-btn__white">How it’s made?</button>
+        <a href="#products" class="hero-btn">Products</a>
+        <a href="#about" class="hero-btn hero-btn__white">How it’s made?</a>
       </div>
       <div>
-        <ul>
-          <li class="group">
-            <h2 class="hero-title__number">16</h2>
+        <ul class="list-group">
+          <li class="group selection">
+            <span class="hero-title__number">16</span>
             <p class="hero-title__cafes">cafes</p>
           </li>
-          <li class="group">
-            <h2 class="hero-title__number">23</h2>
+          <li class="group selection">
+            <span class="hero-title__number">23</span>
             <p class="hero-title__cafes">food trucks</p>
           </li>
         </ul>
       </div>
     </div>
-    <p class="hero-lorem">
+    <div class="hero-lorem">
+    <p>
       Lorem ipsum dolor sit amet, <br />
       consectetur adipiscing elit, <br />
       sed do eiusmod tempor <br />
       incididunt ut labore et
     </p>
-    <img
-      class="hero-img__arrow"
-      src="./images/img/hero/heroarrow-tab.png"
-      alt="красная стрелочка в белом кругу"
-    />
-
+    <button class="sleder-btn">
+        <svg width="26px" height="26px" class="icon-sleder">
+          <use  href="./images/svg/icons.svg#icon-arrow-right2"></use>
+        </svg>
+    </button>
+  </div>
     <picture class="hero-img__milk">
       <source
         srcset="./images/img/hero/cupmilk-tab-1x.png 1x, ./images/img/hero/cupmilk-tab-2x.png 2x"
-        media="(min-width:734px)"
+        media="(min-width:734px) and (max-width:1275px)" 
+      />
+      <source
+        srcset="./images/img/hero/cupmilk-desk-1x.png 1x, ./images/img/hero/cupmilk-desk-2x.png 2x"
+        media="(min-width:1275px)"
       />
       <img src="./images/img/hero/cupmilk-desk-1x.png" alt="графин с молоком" />
     </picture>
@@ -46,7 +51,13 @@
     <picture class="hero-img__girl">
       <source
         srcset="./images/img/hero/herogirl-tab-1x.png 1x, ./images/img/hero/herogirl-tab-2x.png 2x"
-        media="(min-width:734px)"
+        media="(min-width:734px)and (max-width:1275px)"
+      />
+      <source
+        srcset="
+        ./images/img/hero/herogirl-desk-1x.png 1x,
+        ./images/img/hero/herogirl-desk-2x.png 2x"
+        media="(min-width:1275px)"
       />
       <img src="./images/img/hero/herogirl-desk-1x.png" alt="девушка с мороженным" />
     </picture>
@@ -65,8 +76,15 @@
           ./images/img/hero/herocream-tab-1x.png 1x,
           ./images/img/hero/herocream-tab-2x.png 2x
         "
-        media="(min-width:734px)"
+        media="(min-width:734px) and (max-width:1275px)" 
       />
+      <source
+      srcset="
+        ./images/img/hero/herocream-desk-1x.png 1x,
+        ./images/img/hero/herocream-desk-2x.png 2x
+      "
+      media="(min-width:1275px)"
+    />
       <img src="./images/img/hero/herocream-desk-1x.png" alt="рожок мороженного" />
     </picture>
   </div>
