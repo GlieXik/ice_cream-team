@@ -160,11 +160,11 @@
   line-height: 18px;
   text-align: center;
   color: #d41443;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     background-color: #ecebeb;
-    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   @media screen and (min-width: 1275px) {
     margin-top: 40px;
