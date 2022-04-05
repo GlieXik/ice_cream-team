@@ -32,7 +32,7 @@ margin-bottom: 148px;
 }
 }
 
-.section-title__subtitle {
+.section-title__label {
     @include font(18px, 400, 1.17, 0.04em);
     font-family: 'Titan One';
     text-align: center;
@@ -115,7 +115,6 @@ margin-bottom: 148px;
 width: 290px;
 height: 489px;
 border-radius: 24px;
-padding-top: 160px;
 padding-bottom: 40px;
 margin-bottom: 140px;
 padding-top: 0;
