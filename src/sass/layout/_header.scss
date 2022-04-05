@@ -60,6 +60,7 @@
   text-align: start;
   font-size: 20px;
   z-index: 10;
+  box-shadow: 5px 5px 5px 10px #e17992;
   @include tab {
     margin-left: 240px;
     margin-right: 0;
