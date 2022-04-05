@@ -2,7 +2,7 @@
     overflow: hidden;
     margin-top: -1px;
     background-color: rgba(255, 184, 202, 1);
-    @include tab{
+@include tab{
         overflow: visible;
         }
     }
@@ -17,10 +17,12 @@
     text-transform: uppercase;
     color: #ffffff;
     margin-bottom: 20px;
-    @include tab{
+@include tab{
+        height: 80px;
         font-size: 22px;
         }
-    @include desk {
+@include desk {
+        height: 137px;
         font-size: 38px;
         margin-bottom: 24px;
         }
@@ -29,16 +31,19 @@
 .hero-title__word {
     color: rgba(212, 20, 67, 1);
     font-size: 48px;
-    line-height: 0.95;
-    @include tab {
-            font-size: 34px;
+    line-height: 0.9;
+    letter-spacing: 0.04em;
+@include tab {
+        font-size: 34px;
         }
-    @include desk {
+@include desk {
         font-size: 58px;
         }
     }
     
 .hero-btn {
+    display: inline-block;
+    padding-top: 7px;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
@@ -52,10 +57,11 @@
     width: 62.4px;
     margin-right: 8px;
     transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover, &:focus {
+&:hover, &:focus {
         background-color: rgba(199, 19, 62, 1);
     }
-    @include desk {
+@include desk {
+        padding-top: 11px;
         height: 40px;
         width: 107px; 
         font-size: 14px;
@@ -73,7 +79,7 @@
         color: rgba(212, 20, 67, 1);
         background-color: rgba(236, 235, 235, 1);
     }
-    @include desk {
+@include desk {
         height: 40px;
         width: 138px; 
         }
@@ -85,13 +91,13 @@
     z-index: 5;
     padding-top: 136px;
     padding-bottom: 148px;
-    @include tab{
+@include tab{
         padding-top: 20px;
-        padding-bottom: 51px;
+        padding-bottom: 57px;
         }
-    @include desk {
+@include desk {
     padding-top: 20px;
-    padding-bottom: 52px;
+    padding-bottom: 59px;
         }
     }
 .hero-block > .circuls {
@@ -103,52 +109,47 @@
     width: 346px;
     height: 344px;
     z-index: -2;
-    @include tab{
-        left: 233px;
-        top: -36px;
-        width: 335px;
-        height: 333px;
-        }
-    @include desk {
-        width: 534px;
-        height: 534px;
-        left: 517px;
-        top: -33px;
-        }
+@include tab{
+    left: 233px;
+    top: -36px;
+    width: 335px;
+    height: 333px;
     }
+@include desk {
+    width: 534px;
+    height: 534px;
+    left: 517px;
+    top: -33px;
+    }
+}
 
 .hero-img__cream {
     position: absolute;
     left: 117px;
     top: 34px;
     z-index: -1;
-    
-    animation: animate-cream 3000ms 1 cubic-bezier(0.4, 0, 0.2, 1);
-    @keyframes animate-cream {
-        0% {
-        transform: scale(0.5);
-        }
-        100% {
-        transform: scale(1);
-        }
-      }
-    @include tab{
-        left: 292px;
-        top: -2px;
+    animation: animate-cream 4000ms 1 cubic-bezier(0.4, 0, 0.2, 1);
+@keyframes animate-cream {
+    0% {
+    transform: scale(0.5);
     }
-    @include desk {
-        left: 636px;
-        top: 21px;
-        }
+    100% {
+    transform: scale(1);
     }
-
-
-
-  
+    }
+@include tab{
+    left: 292px;
+    top: -2px;
+    }
+@include desk {
+    left: 636px;
+    top: 21px;
+    }
+}
 
 .hero-lorem {
-    display: none;
-    @include tab {
+        display: none;
+@include tab {
         display: block;
         font-family: 'DM Sans';
         font-style: normal;
@@ -159,7 +160,7 @@
         margin-top: 61px;
         padding-left: 152px;
     }
-     @include desk {
+@include desk {
         font-size: 14px;
         margin-top: 108px;
         padding-left: 213px;
@@ -167,42 +168,44 @@
 }
 
 .hero-img__milk {
-    display: none;
-        @include tab {
-       animation: animate-milk 3000ms 2 cubic-bezier(0.4, 0, 0.2, 1);
-        @keyframes animate-milk {
+        display: none;
+@include tab {
+        animation: animate-milk 3500ms  cubic-bezier(0.4, 0, 0.2, 1);
+@keyframes animate-milk {
             0% {
-                transform: perspective(400px) rotateY(30deg);
+                transform: perspective(400px) rotateY(0deg);
             }
-            
             50% {
-                transform: perspective(400px) rotateY(-30deg);
+                transform: perspective(400px) rotateY(-40deg);
+            }
+            75% {
+                transform: perspective(400px) rotateY(40deg);
             }
             100% {
-                transform: perspective(400px) rotateY(30deg);
+                transform: perspective(400px) rotateY(0deg);
             }
             }
         display: block;
         position: absolute;
         top: 164px;
     }
-    @include desk {
+@include desk {
         top: 301px;
     }
 }
 .hero-img__girl {
     display: none;
-    @include tab {
+@include tab {
         animation: animateY110 2500ms 1 100ms;
         
-        @keyframes animateY110 {
-            0% {
-              transform: translateX(450px);
-            }
-            100% {
-              transform: translateX(0);
-            }
-          }
+@keyframes animateY110 {
+        0% {
+            transform: translateX(450px);
+        }
+        100% {
+            transform: translateX(0);
+        }
+        }
         display: block;
         position: absolute;
         right: 15px;
@@ -222,10 +225,9 @@
     }
 }
 
-
 .hero-title__number{
-    display: none;
-    @include tab{
+          display: none;
+@include tab{
         font-family: 'Titan One';
         font-style: normal;
         font-weight: 400;
@@ -236,13 +238,13 @@
         text-transform: uppercase;
         color: $primary-color-text;
     }
-    @include desk {
+@include desk {
         font-size: 46px;
     }
 }
 .hero-title__cafes{
     display: none;
-    @include tab{
+@include tab{
         display: block;
         font-family: 'DM Sans';
         font-style: normal;
@@ -251,17 +253,17 @@
         line-height: 1.25;
         color: $white-color;
     }
-    @include desk {
+@include desk {
         font-size: 14px;
     }
 }
 
 .hero-block__text{
-    @include tab {
+@include tab {
         display: flex;
         justify-content: space-between;
     }
-    @include desk {
+@include desk {
         padding-top: 60px;
     }
 }
@@ -271,10 +273,10 @@
     }
 
 .list-group {
-    @include tab {
+@include tab {
     margin-right: 7px;
     }
-    @include desk {
+@include desk {
         margin-right: 19px;
     }
 }
@@ -283,7 +285,7 @@
     position: relative;
     text-align: right;
 &::before {
-    @include tab {
+@include tab {
         content: '';
         position: absolute; 
         display: block;
@@ -295,7 +297,7 @@
         right: -6px;
         top: -3px;
     }
-    @include desk {
+@include desk {
         width: 30px;
         height: 30px; 
         right: -19px; 
@@ -313,19 +315,19 @@
     align-items: center;
     justify-content: center;
     transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
-    @include desk {
+@include desk {
         margin-top: 20px;
         width: 26px;
         height: 26px;
     }
-    &:hover, &:focus {
+&:hover, &:focus {
         background-color: rgba(236, 235, 235, 1);   
     }
 }
 
 .icon-sleder {
     fill: rgba(212, 20, 67, 1);
-    @include desk {  
+@include desk {  
     width: 11px;
     height: 10px;
     }
