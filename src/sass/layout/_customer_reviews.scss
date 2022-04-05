@@ -108,6 +108,8 @@
 }
 
 .reviews__who {
+    margin: 0;
+
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 500;
@@ -126,15 +128,15 @@
     }
 }
 
-.reviews__who::before {
-    content: "";
-    display: block;
-    background-image: url(../images/svg/points.svg);
-    background-size: 32px 4px;
-    margin: 0 auto 15px;
-    width: 32px;
-    height: 4px;
-}
+// .reviews__who::before {
+//     content: "";
+//     display: block;
+//     background-image: url(../images/svg/points.svg);
+//     background-size: 32px 4px;
+//     margin: 0 auto 15px;
+//     width: 32px;
+//     height: 4px;
+// }
 
 // .slider {
 //     // width: 6%;
