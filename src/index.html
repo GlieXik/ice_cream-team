@@ -3,10 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/icon type" /><use href="./images/svg/icons.svg#icon-ice-cream-ico"></use> </link>
 
     <title>IceCream</title>
-
+    <link rel="icon" href="./images/svg/ice-cream-ico.svg" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -36,7 +35,15 @@
 
     <include src="./partials/footer.html"></include>
 
+    <div class="back-to-top">
+      <svg class="back-to-top__arrow">
+        <use href="./images/svg/icons.svg#icon-arrow-up"></use>
+      </svg>
+    </div>
+
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
+    <script src="./mobile-menu.js"></script>
+    <script src="./scroll-up.js"></script>
   </body>
 </html>

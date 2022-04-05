@@ -1,0 +1,31 @@
+.back-to-top {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: $second-color-text;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  opacity: 0.4;
+  &:hover,
+  &:focus {
+    opacity: 0.9;
+  }
+}
+.back-to-top__arrow {
+  width: 30px;
+  height: 30px;
+
+  fill: $primary-color-text;
+}
+.show {
+  display: flex;
+}
