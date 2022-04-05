@@ -108,6 +108,8 @@
 }
 
 .reviews__who {
+    margin: 0;
+
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 500;
@@ -126,6 +128,48 @@
     }
 }
 
+
+// .reviews__who::before {
+//     content: "";
+//     display: block;
+//     background-image: url(../images/svg/points.svg);
+//     background-size: 32px 4px;
+//     margin: 0 auto 15px;
+//     width: 32px;
+//     height: 4px;
+// }
+
+// .slider {
+//     // width: 6%;
+//     // margin: 100px auto;
+// }
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+.slick-slide {
+    transition: all ease-in-out 0.3s;
+    opacity: 0.2;
+}
+
+.slick-active {
+    opacity: 0.5;
+}
+
+.slick-current {
+    opacity: 1;
+}
+
 .reviews__who::before {
     content: "";
     display: block;
@@ -135,3 +179,4 @@
     width: 32px;
     height: 4px;
 }
+
