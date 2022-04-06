@@ -12,8 +12,9 @@
 }
 .gallary__grid {
   display: grid;
-  justify-content: center;
   padding: 0 16px;
+  grid-template-columns: 1fr 1fr minmax(80px, 2fr) 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 
   @include tab {
     padding: 0 73px;
@@ -21,17 +22,92 @@
   @include desk {
     padding: 0 135px;
   }
+}
 
-  grid-template-columns: 1fr 1fr minmax(80px, 2fr) 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+// .gallary__grid-item {
+//   text-align: center;
+//   border: 2px dashed aqua;
+//   justify-self: center;
+// }
+
+// .gallary_grid-item:nth-child(8) {
+//   display: none;
+// }
+
+.grid {
+  width: 100%;
+}
+
+.gallary__grid {
+  background-color: white;
+  border: 1px solid salmon;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  margin: 0 auto;
+
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(40, 1fr);
+  // row-gap: 10px;
+  // column-gap: 10px;
 }
 
 .gallary__grid-item {
-  text-align: center;
-  border: 2px dashed aqua;
-  justify-self: center;
+  background-color: #444;
+  color: #fff;
+  width: 100%;
+  &:nth-child(1) {
+    grid-column: 1 / 4;
+    grid-row: 10 / 19;
+    width: 23%;
+  }
+  &:nth-child(2) {
+    grid-column: 4 / 7;
+    grid-row: 5 / 14;
+    width: 23%;
+  }
+  &:nth-child(3) {
+    grid-column: 4 / 7;
+    grid-row: 14 / 23;
+    width: 35%;
+  }
+  &:nth-child(4) {
+    grid-column: 7 / 13;
+    grid-row: 1 / 18;
+    width: 23%;
+  }
+  &:nth-child(5) {
+    grid-column: 7 / 10;
+    grid-row: 18 / 27;
+    width: 23%;
+  }
+  &:nth-child(6) {
+    grid-column: 7 / 10;
+    grid-row: 18 / 27;
+    width: 23%;
+  }
+  &:nth-child(7) {
+    grid-column: 7 / 10;
+    grid-row: 18 / 27;
+    width: 23%;
+  }
+  &:nth-child(8) {
+    grid-column: 7 / 10;
+    grid-row: 18 / 27;
+    width: 23%;
+  }
+  &:nth-child(9) {
+    grid-column: 7 / 10;
+    grid-row: 18 / 27;
+    width: 23%;
+  }
+  &:nth-child(10) {
+    grid-column: 7 / 10;
+    grid-row: 18 / 27;
+    width: 23%;
+  }
 }
 
-.gallary_grid-item:nth-child(8) {
-  display: none;
+.gallary__grid-item img {
+  border-radius: 30px;
 }
