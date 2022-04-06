@@ -1,12 +1,13 @@
 .backdrop {
     position: fixed;
+    z-index: 99;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.2);
 
-    transition: opacity 250ms, visibility 250ms;
+    transition: opacity 250ms, visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -20,8 +21,8 @@
     z-index: 999;
     top: 50%;
     left: 50%;
-    width: 450px;
-    padding: 40px;
+    width: 320px;
+    padding: 60px 30px;
     transform: translate(-50%, -50%) scale(1);
     background-color: $background-color-4;
     background-image: url(../images/img/products/icecream-png-2.jpg);
@@ -35,40 +36,43 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     .backdrop.is-hidden & {
-        transform: translate(-50%, -50%) scale(0.8) cubic-bezier(0.4, 0, 0.2, 1);
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+
+    @include tab {
+        width: 500px;
+        padding: 40px;
     }
 
     @include desk {
-        width: 528px;
-        height: 581px;
+        width: 600px;
     }
 }
 
 .close-btn {
     position: absolute;
-    top: 8px;
-    right: 8px;
+    top: 10px;
+    right: 10px;
 
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
 
     background: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: #ecebeb;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
 }
 
 .close-btn__icon {
-    fill: #000;
-
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    .close-btn:hover &,
-    .close-btn:focus & {
-        fill: $primary-color-text;
-    }
+    fill: $primary-color-text;
 }
 
 .modal__title {
@@ -77,27 +81,40 @@
     text-align: start;
     text-transform: uppercase;
     color: $primary-color-text;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
+    @include tab {
+        font-size: 32px;
+    }
 }
 
 .modal-text {
-    @include font(20px, 400, 1.15, 0.04em);
+    @include font(18px, 400, 1.17, 0.04em);
     font-family: 'Titan One';
     text-align: start;
     text-transform: uppercase;
-    color: $primary-color-text;
+    color: $second-color-text;
+   
+    @include tab {
+        font-size: 22;
+    }
 }
 
 .modal-form__field {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .modal-form__label {
     display: block;
-    @include font(12px, null, null, 0.01em);
-    line-height: calc(14 / 12);
+    @include font(14px, 500, 1.66, 0.04em);
+    font-family: 'DM Sans';
     color: $second-color-text;
-    margin-bottom: 4px;
+    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .modal-form__input:hover &,
+    .modal-form__input:focus & {
+        color: $primary-color-text;
+    }
 }
 
 .modal-form__input-wrap {
@@ -107,80 +124,38 @@
 .modal-form__input {
     width: 100%;
     height: 40px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-width: 1px;
+    border-color: $second-color-text;
     outline: none;
-    padding-left: 30px;
+    padding-left: 10px;
 
-    transition: border 250ms;
+    transition: border-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
-        border: 1px solid $primary-color-text;
+        border-bottom: 1px solid $primary-color-text;
     }
 }
 
-.modal-form__textarea-field {
-    margin-bottom: 20px;
+.submit-btn {
+display: inline-block;
+padding: 7px 14px;
+@include font(14px, 400, 1.25, 0.04em);
+font-family: 'DM Sans';
+text-align: center;
+color: $white-color;
+border-radius: 20px;
+background-color: rgba(212, 20, 67, 1);
+margin-bottom: 20px;
+
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover,
+&:focus {
+    background-color: rgba(199, 19, 62, 1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-
-.modal-form__textarea {
-    width: 100%;
-    height: 120px;
-    padding: 12px 16px;
-    resize: none;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    outline: none;
-    @include font(14px, 400, null, 0.01em);
-    line-height: calc(16 / 14);
-    color: rgba(117, 117, 117, 0.5);
-
-    transition: border 250ms;
-
-    &:hover,
-    &:focus {
-        border: 1px solid $primary-color-text;
-    }
-
 }
-
-// .checkbox {
-//     margin-bottom: 30px;
-// }
-
-// .checkbox__label {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-// }
-
-// .checkbox__text {
-//     @include font(12px, null, null, 0.03em);
-//     line-height: calc(14 / 12);
-//     color: #000;
-// }
-
-// .checkbox__link {
-//     color: $primary-color-text;
-// }
-
-// .checkbox__checked-icon {
-//     border: 2px solid #212121;
-//     border-radius: 2px;
-//     fill: transparent;
-//     margin-right: 8px;
-
-//     transition: border 250ms,
-//         background-color 250ms, border-color 250ms;
-// }
-
-// .checkbox__check:focus~.checkbox__checked-icon,
-// .checkbox__check:hover~.checkbox__checked-icon {
-//     border-color: $primary-color-text;
-// }
-
-// .checkbox__check:checked~.checkbox__checked-icon {
-//     border-color: transparent;
-//     background-color: $primary-color-text;
-// }
