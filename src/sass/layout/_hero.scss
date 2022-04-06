@@ -126,7 +126,7 @@
 .hero-img__cream {
     position: absolute;
     left: 117px;
-    top: 34px;
+    top: 36px;
     z-index: -1;
     animation: animate-cream 4000ms 1 cubic-bezier(0.4, 0, 0.2, 1);
 @keyframes animate-cream {
@@ -139,7 +139,7 @@
     }
 @include tab{
     left: 292px;
-    top: -2px;
+    top: 2px;
     }
 @include desk {
     left: 636px;
@@ -200,7 +200,7 @@
         
 @keyframes animateY110 {
         0% {
-            transform: translateX(450px);
+            transform: translateX(200px);
         }
         100% {
             transform: translateX(0);
