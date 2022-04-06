@@ -69,12 +69,14 @@
     width: 258px;
     
   }
-
+@media screen and (max-width:1275px){
   &.is-open {
     height: 100vh;
     display: flex;
     flex-direction: column;
   }
+}
+  
   @keyframes animate-menu {
     0% {
       transform: translateX(450px);
