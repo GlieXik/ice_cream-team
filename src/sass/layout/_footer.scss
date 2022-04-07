@@ -1,13 +1,13 @@
 .footer {
     background-color: #FFF5F6;
     @include tel {
-        padding-top: 48px;
+        padding-top: 24px;
     }
     @include tab {
-        padding-top: 40px;
+        padding-top: 20px;
     }
     @include desk {
-        padding-top: 120px;
+        padding-top: 60px;
     }
 }
 .footer--container{

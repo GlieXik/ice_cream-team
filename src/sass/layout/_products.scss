@@ -273,8 +273,14 @@ background-color: $background-color-1;
 }
 
 .desc-container {
+    height: 124px;
 margin-bottom: 32px;
+overflow: hidden;
+@include tab {
+    height: 150px;
+}
 @include desk {
+    height: 106px;
     margin-bottom: 60px;
 }
 }
