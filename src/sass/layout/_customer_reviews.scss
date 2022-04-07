@@ -145,13 +145,13 @@
     }
 }
 
-// .reviews__who::before {
-//     content: "";
-//     display: block;
-//     background-image: url(../images/svg/points.svg);
-//     background-size: 32px 4px;
-//     margin: 0 auto 15px;
-//     width: 32px;
-//     height: 4px;
-// }
+.reviews__who::before {
+    content: "";
+    display: block;
+    background-image: url(../images/svg/points.svg);
+    background-size: 32px 4px;
+    margin: 0 auto 15px;
+    width: 32px;
+    height: 4px;
+}
 
