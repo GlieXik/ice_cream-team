@@ -18,7 +18,6 @@
   }
   @media screen and (min-width: 1275px) {
     display: flex;
-    padding-top: 79px;
   }
 }
 .how-its-made {
@@ -34,7 +33,7 @@
   color: #ffa5ba;
   display: flex;
   justify-content: center;
-  padding-bottom: 15px;
+  margin-bottom: 15px;
   @media screen and (min-width: 734px) and (max-width: 1274px) {
     font-size: 26px;
     line-height: 30px;
@@ -57,16 +56,18 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
-  padding-bottom: 25px;
+  margin-bottom: 32px;
   @media screen and (min-width: 734px) and (max-width: 1274px) {
     font-size: 48px;
     line-height: 55px;
     letter-spacing: 0.04em;
+    margin-bottom: 40px;
   }
   @media screen and (min-width: 1275px) {
     font-size: 58px;
     line-height: 66px;
     letter-spacing: 0.06em;
+    margin-bottom: 80px;
   }
 }
 .img-cow {
@@ -84,9 +85,6 @@
     margin-left: 139px;
   }
 }
-.reciept {
-  padding-bottom: 20px;
-}
 .hreciept-text {
   font-family: 'DM Sans';
   font-style: normal;
@@ -94,6 +92,8 @@
   font-size: 12px;
   line-height: 162%;
   color: #000000;
+  margin-bottom: 20px;
+  margin-top: 40px;
   @media screen and (min-width: 734px) and (max-width: 1274px) {
     font-size: 14px;
     line-height: 176%;
@@ -107,9 +107,6 @@
     margin-top: 72px;
   }
 }
-.process {
-  padding-bottom: 20px;
-}
 .process-text {
   font-family: 'DM Sans';
   font-style: normal;
@@ -117,6 +114,7 @@
   font-size: 12px;
   line-height: 162%;
   color: #907e82;
+  margin-bottom: 20px;
   @media screen and (min-width: 734px) and (max-width: 1274px) {
     font-size: 14px;
     line-height: 176%;
@@ -136,10 +134,12 @@
   font-size: 12px;
   line-height: 162%;
   color: #907e82;
+  margin-bottom: 20px;
   @media screen and (min-width: 734px) and (max-width: 1274px) {
     font-size: 14px;
     line-height: 176%;
     letter-spacing: 0.04em;
+    margin-bottom: 40px;
   }
   @media screen and (min-width: 1275px) {
     font-size: 14px;
