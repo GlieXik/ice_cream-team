@@ -1,13 +1,13 @@
 .customer_reviews {
     padding-top: 80px;
-    padding-bottom: 48px;
+    padding-bottom: 28px;
     background-color:$white-color;
     @media screen and (min-width: 734px) and (max-width: 1274px) {
-        padding-bottom: 80px;
+        padding-bottom: 40px;
     }
     @media screen and (min-width: 1275px) {
         padding-top: 120px;
-        padding-bottom: 120px;
+        padding-bottom: 60px;
     }
 }
 
